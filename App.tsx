@@ -1,11 +1,16 @@
-import { Text, View } from "react-native"
+import { SafeAreaView, StyleSheet } from "react-native"
+import HellowScreen from "./src/presentation/screens/HellowScreen"
 
 export const App = () => {
   return (
-    <View>
-      <Text>
-        Hola kevon
-      </Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <HellowScreen name={'David Fernando'}/>
+    </SafeAreaView>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+})
